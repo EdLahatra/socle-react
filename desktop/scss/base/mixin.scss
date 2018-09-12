@@ -1,0 +1,32 @@
+// =============================================================================
+// Font Face
+// =============================================================================
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); // IE9 compat
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+			url('#{$src}.woff') format('woff'), // standards
+			url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+			url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+
+@mixin alignAuto (){
+	margin: 0 auto;
+	display: block
+}
+@mixin roundcorner ($roundValue) {
+	border-radius: $roundValue;
+	-webkit-border-radius: $roundValue;
+	-ms-border-radius: $roundValue;
+	-moz-border-radius: $roundValue;
+}
+@mixin line-height($height) {
+  line-height: $height;
+  height: $height;
+  vertical-align: middle;
+}

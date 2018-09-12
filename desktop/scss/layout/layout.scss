@@ -1,0 +1,125 @@
+//HEADER
+#header {
+    min-height: 40px;
+	background-color: $darkpurple;
+	display: flex;
+	align-items: center;
+	padding: 0 $unit;
+		.left {
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			p {
+				margin-right:$unit;
+				color:$lightpurple;
+			}
+		}
+		.shareurl {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 5px 10px;
+			background: #312b31;
+			@include roundcorner (2px);
+			div {
+				font-size: 14px;
+				color: rgba(255, 255, 255, 0.60);
+			}
+		}
+}
+
+//CONTENTS
+#mainContainer {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 100%;
+}
+.clientContainer {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+	padding-left: 250px;
+}
+
+#leftSidenav {
+	width: 250px;
+	color: #fff;
+	position: fixed;
+	top: 40px;
+	bottom: 0;
+	left: 0;
+	background: $darkblue;
+
+	.itemPlace {
+    cursor: pointer;
+    padding: 10px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+	
+	.add-place {
+	background-color:$cyan;
+  }
+}
+#logoZone {
+		padding: $unit 0;
+		text-align: center;
+	}
+}
+.subfolders {
+    padding-left: 20px;
+
+    .folder-name {
+      display: inline-block;
+      @include line-height(26px);
+      cursor: pointer;
+
+      &.current {
+        background: #26C875;
+      }
+    }
+}
+
+#innerTopbar {
+	background-color:$cyan;
+	min-height: $unit*2
+}
+
+//DISCUSSION & FILES
+
+#discussions {
+  background: #F1F1F1;
+  width:50%;
+  padding:$innerpadding;
+  .discussion {
+    padding: 5px;
+    cursor: pointer;
+
+    &.current {
+      background: #3697FF;
+      color: white;
+    }
+  }
+
+  .add-discussion {
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px
+  }
+}
+
+#chat {
+  width: 50%;
+  padding:$innerpadding;
+  .add-message {
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px
+  }
+}

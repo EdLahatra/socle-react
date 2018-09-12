@@ -1,0 +1,4 @@
+git_url "git@github.com:Shareplace/Certificates.git"
+
+app_identifier "julien.place.share.app"
+username "julien@share.place"

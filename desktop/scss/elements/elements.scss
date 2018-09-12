@@ -1,0 +1,65 @@
+/*Ajout places*/
+#login {
+	@include alignAuto ();
+	max-width: 400px;
+	background-color: $darkblue;
+	padding: $innerpadding;
+	position: relative;
+	top: 100px;
+	.title-l {
+		text-align: center;
+		color: white;
+		margin: 0 0 2em;
+	}
+	label{
+		display: block;
+		margin-bottom:$unit;
+	}
+	input {
+		width: 100%;
+		margin-top: 1em;
+	}
+}
+
+/*Ajout places*/
+.place-name {
+	font-family:NexaBold;
+	font-size:16px;
+}
+.addplaceContainer {
+	.add-place {
+		font-size: 0;
+		width: 24px;
+		height: 24px;
+		background-color: $cyan;
+			&:before {
+				content: "+";
+				color: #fff;
+				font-size: 18px;
+				line-height: 24px;
+				text-align: center;
+				display: block;	
+				font-weight: bold;
+			}
+	}
+	.addplaceField {
+		background-color:$darkpurple;
+		padding: ($unit / 2) 5px;
+		text-align: left;
+	}
+	.closePlace {
+	font-size: 0;
+		width: 24px;
+		height: 24px;
+		background-color: $cyan;
+			&:before {
+				content: "x";
+				color: #fff;
+				font-size: 18px;
+				line-height: 24px;
+				text-align: center;
+				display: block;	
+				font-weight: bold;
+			}
+	}
+}

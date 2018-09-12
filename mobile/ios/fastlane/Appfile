@@ -1,0 +1,7 @@
+app_identifier "julien.place.share.app" # The bundle identifier of your app
+apple_id "julien@share.place" # Your Apple email address
+
+team_id "MT835FJXNK" # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://docs.fastlane.tools/advanced/#appfile
